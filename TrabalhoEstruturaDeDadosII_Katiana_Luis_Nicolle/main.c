@@ -13,14 +13,6 @@
 #define MAX_WORD_SIZE 80
 
 int main( int argc, char **argv ) {
-
- //para rodar no windows  APAGARRRRRRRRRRRRRRRRRRR
-    argc = 4;
-    argv[1] = "--freq";
-    argv[2] = "15";
-    argv[3] = "103.txt";
-
-
 	if (argc < 2) {
 		printf("Quantidade de argumentos inválida\n");
 		return 0;
