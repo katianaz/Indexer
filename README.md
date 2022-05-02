@@ -23,3 +23,16 @@
     
 ## USO
 Rodar com:
+
+Para compilar usando o gcc
+``` sh
+gcc main.c -o indexer -lm
+```
+Para rodar --freq e saber quais são as palavras que mais aparecem no arquivo
+``` sh
+./indexer --freq N ARQUIVO
+```
+Para rodar --search e listar os arquivos mais relevantes para um dado termo
+``` sh
+./indexer --search TERMO ARQUIVO [ARQUIVO ...]
+```
