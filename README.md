@@ -3,9 +3,9 @@
     indexer - indexa palavras de documentos de texto
 
 ## SINOPSE
-    indexer --freq N ARQUIVO
-    indexer --freq-word PALAVRA ARQUIVO
-    indexer --search TERMO ARQUIVO [ARQUIVO ...]
+    main --freq N ARQUIVO
+    main --freq-word PALAVRA ARQUIVO
+    main --search TERMO ARQUIVO [ARQUIVO ...]
 
 ## DESCRIÇÃO
     O programa **indexer** realiza uma contagem de palavras em documentos de texto. A partir dessa contagem, ele ainda permite uma busca pelo número de 
@@ -26,13 +26,17 @@ Rodar com:
 
 Para compilar usando o gcc
 ``` sh
-gcc main.c -o indexer -lm
+gcc main.c -o main -lm
 ```
 Para rodar --freq e saber quais são as palavras que mais aparecem no arquivo
 ``` sh
-./indexer --freq N ARQUIVO
+./main --freq N ARQUIVO
+```
+Para rodar --freq-word e saber o número de ocorrências da palavra no arquivo
+``` sh
+./main --freq-word PALAVRA ARQUIVO
 ```
 Para rodar --search e listar os arquivos mais relevantes para um dado termo
 ``` sh
-./indexer --search TERMO ARQUIVO [ARQUIVO ...]
+./main --search TERMO ARQUIVO [ARQUIVO ...]
 ```
