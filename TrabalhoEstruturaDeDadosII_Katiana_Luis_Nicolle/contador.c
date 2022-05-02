@@ -9,6 +9,7 @@
 #include "contador.h"
 #include <assert.h>
 
+
 #define MAX_WORD_SIZE 80
 
 char * getProxPalavra(FILE * fd) {
